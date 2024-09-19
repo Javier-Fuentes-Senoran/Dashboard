@@ -5,7 +5,7 @@ import pandas as pd
 from dash import dash_table
 import dash_bootstrap_components as dbc  # More styles
 
-# Starting Dasboard with  BOOTSTRAP
+# Starting Dashboard with  BOOTSTRAP
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
@@ -50,12 +50,8 @@ def login(n_clicks, username, password):
                 html.Div("Incorrect username or password. Please try again.", style={'color': 'red', 'text-align': 'center'})
             ])
     else:
-        return login_layout
+        return login_layout  
     
-    
-
-
-
 
 # Data imported
 try:
